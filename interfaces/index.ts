@@ -12,8 +12,8 @@ export interface PostModalProps {
 }
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    size : string;
-    shape : string;
+    size : 'small' | 'medium' | 'large';
+    shape : 'rounded-sm'|'rounded-md'|'rounded-lg';
 }
 
 export interface PostProps {
@@ -23,9 +23,17 @@ export interface PostProps {
     id: number;
 }
 
+export interface PostsPageProps {
+  posts: PostProps[];
+}
+
 export interface UserProps {
     id : number;
     name: string;
     email: string;
     address: string;
+}
+
+export interface UsersPageProps {
+  users: UserProps[];
 }
