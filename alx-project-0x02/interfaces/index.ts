@@ -12,8 +12,8 @@ export interface PostModalProps {
 }
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    size : string;
-    shape : string;
+    size : "small" | "medium" | "large";
+    shape : "rounded-sm"|"rounded-md"|"rounded-lg";
 }
 
 export interface PostProps {
