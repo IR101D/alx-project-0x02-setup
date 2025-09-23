@@ -1,6 +1,7 @@
 import Home from "@/pages/home"
 import About from "@/pages/about"
 import Posts from "@/pages/posts"
+import Link from", "next/link"
 
 const Header : React.FC = () => {
     return (
